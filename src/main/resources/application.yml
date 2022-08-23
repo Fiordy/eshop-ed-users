@@ -1,0 +1,12 @@
+# ----- MongoDB reactive ---------------------------------
+spring:
+  # Data
+  data:
+    mongodb:
+      host: mongodb
+      uri: mongodb+srv://${MONGO_USER}:${MONGO_PWD}@mernshop.sl2ux1g.mongodb.net/test?retryWrites=true&w=majority
+      database: test
+      port: 27017
+  # Kafka
+  kafka:
+    bootstrap-servers: localhost:9092
